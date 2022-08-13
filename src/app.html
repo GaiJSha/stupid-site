@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<body>
+		<style>
+			@font-face {
+				font-family: 'Amatica SC';
+				src: url('AmaticaSC-Regular.woff2') format('woff2'),
+					url('AmaticaSC-Regular.woff') format('woff'),
+					url('AmaticaSC-Regular.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'Amatica SC';
+				src: url('AmaticaSC-Bold.woff2') format('woff2'), url('AmaticaSC-Bold.woff') format('woff'),
+					url('AmaticaSC-Bold.ttf') format('truetype');
+				font-weight: bold;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			* {
+				direction: rtl;
+				font-family: 'Amatica SC' !important;
+			}
+
+			:root {
+				font-size: 2em;
+			}
+
+			body {
+				padding: 1em;
+			}
+
+			h1 {
+				font-weight: bold;
+			}
+
+			html.dark body {
+				background: #41403e;
+			}
+		</style>
+		<div>%sveltekit.body%</div>
+	</body>
+</html>
